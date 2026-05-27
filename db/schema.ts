@@ -10,7 +10,5 @@ export const generations = pgTable("generations", {
   styleLabel: text("style_label").notNull(),
   model: text("model").notNull(),
   promptUsed: text("prompt_used").notNull(),
-  createdAt: timestamp("created_at", { withTimezone: true })
-    .defaultNow()
-    .notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),
 });

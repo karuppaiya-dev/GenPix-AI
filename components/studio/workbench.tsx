@@ -28,6 +28,7 @@ function StudioWorkbenchForm() {
     >
       <StudioControlsPanel />
       <StudioPreviewPanel />
+
       {viewedHistoryItem && (
         <HistoryPreviewDialog item={viewedHistoryItem} onClose={closeHistoryPreview} />
       )}
